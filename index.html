@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Simon Game</title>
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+    </audio>
+    <audio id="gameOver">
+        <source src="mixkit-funny-fail-low-tone-2876.wav">
+    </audio>
+
+</head>
+
+<body>
+    <h1>SIMON!</h1>
+    <div id="flex-container">
+        <div id="controller">
+            <div class="button b1"></div>
+            <div class="button b2"></div>
+            <div class="button b3"></div>
+            <div class="button b4"></div>
+        </div>
+        <div id="homeButtons">
+            <div class="slider">
+                <input type="checkbox" id="power">
+                <div class="slidinggroove"></div>
+                <label for="power" class="slider"></label>
+            </div>
+            <button id="start"><i class="fa fa-play"></i></button>
+            <div id="turn"></div>
+            <div class="text">SCORE</div>
+        </div>
+    </div>
+</body>
+
+</html>
